@@ -38,7 +38,7 @@ def matadd(a, b):
     result = newMatrix(len(a),len(a[0])) # Ergebnismatrix gleicher Größe wie a bzw. b
     for i in range(len(a)): # Schleife über Zeilen
         for j in range(len(a[0])): # Schleife über Spalten
-            result[i][j] = a[i][j] + b[i][j] # Wert der Ergenbnismatrix wird Addition der Werte von a und b an der jeweiligen Stelle
+            result[i][j] = a[i][j] + b[i][j] # Wert der Ergebnismatrix wird Addition der Werte von a und b an der jeweiligen Stelle
     return result
 
 
@@ -105,7 +105,7 @@ def matMultDC(a, b):
             das Ergebnis wird in c zwischengespeichert
             Die jeweilig folgende for-Schleife überträgt dann die Einträge aus c an die passenden Stellen der
             Ergebnismatrix
-            Beispielsweise füllt die folgende for-Schleife das obere linke Viertel der Ergenismatrix:
+            Beispielsweise füllt die folgende for-Schleife das obere linke Viertel der Ergebnismatrix:
             for i in range(0,int(n/2)):
                 result[i][0:int(o/2)] = c[i]
             i läuft über die Zeilen der Ergebnismatrix (von Index 0 bis zur Hälfte), durch die Slice Operation wird
